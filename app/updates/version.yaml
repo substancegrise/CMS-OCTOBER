@@ -1,0 +1,8 @@
+1.0.1:
+  - First version of App
+  - create_formations_table.php
+  - create_actus_table.php
+1.0.2:
+  - Create Contact forms
+  - create_contact_forms_table.php
+  - create_tasks_table.php

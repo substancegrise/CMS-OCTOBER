@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Actus
+
+# Model Form Field configuration
+form: $/lfi/app/models/actus/fields.yaml
+
+# Model Class name
+modelClass: Lfi\App\Models\Actus
+
+# Default redirect location
+defaultRedirect: lfi/app/actus
+
+# Create page
+create:
+    title: Create Actus
+    redirect: lfi/app/actus/update/:id
+    redirectClose: lfi/app/actus
+
+# Update page
+update:
+    title: Edit Actus
+    redirect: lfi/app/actus
+    redirectClose: lfi/app/actus
+
+# Preview page
+preview:
+    title: Preview Actus

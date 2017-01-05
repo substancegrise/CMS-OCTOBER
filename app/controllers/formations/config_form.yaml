@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Formation
+
+# Model Form Field configuration
+form: $/lfi/app/models/formation/fields.yaml
+
+# Model Class name
+modelClass: LFI\App\Models\Formation
+
+# Default redirect location
+defaultRedirect: lfi/app/formations
+
+# Create page
+create:
+    title: Create Formation
+    redirect: lfi/app/formations/update/:id
+    redirectClose: lfi/app/formations
+
+# Update page
+update:
+    title: Edit Formation
+    redirect: lfi/app/formations
+    redirectClose: lfi/app/formations
+
+# Preview page
+preview:
+    title: Preview Formation

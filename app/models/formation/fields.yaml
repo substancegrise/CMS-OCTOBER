@@ -1,0 +1,38 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: Titre
+        required: true
+        type: text
+    category:
+        label: Categorie
+        type: checkbox
+        default: true
+    content:
+        label: Description
+        type: richeditor
+        toolbarButtons: bold|italic
+        size: huge
+    images:
+        label: Images
+        type: fileupload
+        mode: image
+        imageHeight: 260
+        imageWidth: 260
+    start_date:
+        label: Date de début
+        type: datepicker
+        mode: date
+    end_date:
+        label: Date de fin
+        type: datepicker
+        mode: date
+    is_published:
+        label: Publié
+        type: switch
+        comment: Cliquez pour publier ou dépublier
+
+
