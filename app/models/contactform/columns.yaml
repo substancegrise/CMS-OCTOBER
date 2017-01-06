@@ -1,8 +1,28 @@
-# ===================================
-#  List Column Definitions
-# ===================================
-
 columns:
-    id:
-        label: ID
+    name:
+        label: 'lfi.app::lang.contactform.from'
+        type: partial
+        path: ~/plugins/lfi/app/models/contactform/_name_col.htm
         searchable: true
+        sortable: true
+    subject:
+        label: 'lfi.app::lang.contactform.subject'
+        type: text
+        searchable: true
+        sortable: true
+    email:
+        label: 'lfi.app::lang.contactform.email'
+        type: text
+        searchable: true
+        sortable: true
+    phone:
+        label: 'lfi.app::lang.contactform.phone'
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: 'lfi.app::lang.contactform.date'
+        type: date
+        searchable: true
+        sortable: true
+

@@ -1,0 +1,60 @@
+fields:
+    form_settings.section:
+            label: lfi.app::lang.contactformsettings.section_contact_label
+            type: section
+    redirect_to_page:
+            span: left
+            label: lfi.app::lang.contactformsettings.redirect_label
+            commentAbove: lfi.app::lang.contactformsettings.redirect_comment
+            type: switch
+    redirect_to_url:
+            span: right
+            label: lfi.app::lang.contactformsettings.redirect_url_label
+            commentAbove: lfi.app::lang.contactformsettings.redirect_url_comment
+            type: dropdown
+    success_message:
+            span: left
+            label: lfi.app::lang.contactformsettings.success_message
+            commentAbove: lfi.app::lang.contactformsettings.success_message_comment
+            type: text
+    text_top_form:
+            label: lfi.app::lang.contactformsettings.form_top_text_label
+            commentAbove: lfi.app::lang.contactformsettings.form_top_text_comment
+            type: richeditor
+            size: giant
+    form_mail_settings.section:
+            label: lfi.app::lang.contactformsettings.section_mail_label
+            type: section
+    recieve_notification:
+          span: left
+          label: lfi.app::lang.contactformsettings.notification_label
+          commentAbove: lfi.app::lang.contactformsettings.notification_comment
+          type: switch
+    auto_reply:
+          span: right
+          label: lfi.app::lang.contactformsettings.auto_reply_label
+          commentAbove: lfi.app::lang.contactformsettings.auto_reply_comment
+          type: switch
+    notification_email_address:
+         label: lfi.app::lang.contactformsettings.notification_email_address
+         commentAbove: lfi.app::lang.contactformsettings.notification_email_address_comment
+         span: left
+         type: text
+    recaptcha_settings.section:
+        label: lfi.app::lang.contactformsettings.section_recaptcha_label
+        type: section
+        comment: lfi.app::lang.contactformsettings.section_recaptcha_comments
+    recaptcha_enabled:
+        label: lfi.app::lang.contactformsettings.recaptcha_label
+        commentAbove: lfi.app::lang.contactformsettings.recaptcha_comment
+        type: switch
+    site_key:
+        label: lfi.app::lang.contactformsettings.site_key_label
+        commentAbove: lfi.app::lang.contactformsettings.site_key_comment
+        span: left
+        type: text
+    secret_key:
+        label: lfi.app::lang.contactformsettings.secret_key_label
+        commentAbove: lfi.app::lang.contactformsettings.secret_key_comment
+        span: right
+        type: text

@@ -1,0 +1,13 @@
+plugin:
+    name: App
+    description: 'lfi.app::lang.plugin.description'
+    author: LFI
+    icon: icon-leaf
+    homepage: ''
+permissions:
+    lfi.app.inbox:
+        tab: 'lfi.app::lang.contactform.permission'
+        label: 'lfi.app::lang.contactform.permission_messages'
+    lfi.app.manage_settings:
+        tab: 'lfi.app::lang.contactform.permission'
+        label: 'lfi.app::lang.contactform.permission_settings'

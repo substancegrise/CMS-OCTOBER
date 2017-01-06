@@ -2,6 +2,7 @@
 
 use Backend;
 use System\Classes\PluginBase;
+use LFI\App\Controllers\ContactForm AS ContactFormController;
 
 /**
  * App Plugin Information File
@@ -50,11 +51,9 @@ class Plugin extends PluginBase
      */
     public function registerComponents()
     {
-
         return [
-            'Lfi\App\Components\Todo' => 'todoList',
-            'Lfi\App\Components\TremaLab' => 'actusTrema',
-            'Lfi\App\Components\ContactForm' => 'contactForm',
+            'LFI\App\Components\Todo' => 'todoList',
+            'LFI\App\Components\ContactForm' => 'contactForm',
         ];
     }
 
@@ -65,13 +64,26 @@ class Plugin extends PluginBase
      */
     public function registerPermissions()
     {
-        return []; // Remove this line to activate
-
         return [
             'lfi.app.some_permission' => [
                 'tab' => 'App',
                 'label' => 'Some permission'
             ],
+        ];
+    }
+    
+    
+    public function registerSettings()
+    {
+        return [
+            'config' => [
+                'label'       => 'LFI Contact Form',
+                'icon'        => 'icon-envelope',
+                'description' => 'Manage Settings.',
+                'class'       => 'LFI\App\Models\ContactFormSettings',
+                'permissions' => ['lfi.contactform.manage_settings'],
+                'order'       => 60
+            ]
         ];
     }
 
@@ -107,9 +119,27 @@ class Plugin extends PluginBase
                         'url'         => Backend::url('lfi/app/actus'),
                         'description' => 'Administration des actus',
                         'permissions' => ['lfi.app.*']
+                    ],
+                    'Contacts' => [
+                        'label'       => 'lfi.app::lang.contactform.submenu',
+                        'icon'        => 'icon-inbox',
+                        'url'         => Backend::url('lfi/app/contactform'),
+                        'permissions' => ['lfi.app.inbox'],
+                        'counter'     => ContactFormController::countUnreadMessages(),
+                        'counterLabel' => 'Un-Read Messages',
+                        'description' => 'Demande de contacts'
                     ]
                 ]
             ]
+        ];
+    }
+
+    public function registerMailTemplates()
+    {
+        return [
+            'lfi.app::mail.reply' => 'Formulaire de contact -- Réponse',
+            'lfi.app::mail.auto-response' => 'Formulaire de contact -- Réponse automatique',
+            'lfi.app::mail.notification' => 'Formulaire de contact -- Email de notification',
         ];
     }
 }
