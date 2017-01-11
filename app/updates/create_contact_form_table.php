@@ -14,8 +14,9 @@ class CreateContactformTable extends Migration
             $table->string('name')->nullable();
             $table->string('email')->nullable();
             $table->string('phone')->nullable();
-            $table->string('subject')->nullable();
+            $table->string('subject');
             $table->text('message')->nullable();
+            $table->string('function');
             $table->boolean('is_new')->default(1);
             $table->timestamps();
         });

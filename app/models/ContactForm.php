@@ -22,7 +22,7 @@ class ContactForm extends Model
     public $timestamps = true;
 
     /**
-     * @var string The database table used by the model.
+     * @var string The database table used by the model. ******************  IMPORTANT ************************************************
      */
     public $table = 'lfi_app_contact_form';
 

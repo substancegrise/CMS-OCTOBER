@@ -54,6 +54,8 @@ class Plugin extends PluginBase
         return [
             'LFI\App\Components\Todo' => 'todoList',
             'LFI\App\Components\ContactForm' => 'contactForm',
+            'LFI\App\Components\PartnersComp' => 'partnersComp',
+
         ];
     }
 
@@ -128,7 +130,14 @@ class Plugin extends PluginBase
                         'counter'     => ContactFormController::countUnreadMessages(),
                         'counterLabel' => 'Un-Read Messages',
                         'description' => 'Demande de contacts'
-                    ]
+                    ],
+                    'Partners' => [
+                        'label'       => 'Partners',
+                        'icon'        => 'icon-object-ungroup',
+                        'url'         => Backend::url('lfi/app/partners'),
+                        'permissions' => ['lfi.app.*'],
+                        'description' => 'Administration des logos partners'
+                    ],
                 ]
             ]
         ];

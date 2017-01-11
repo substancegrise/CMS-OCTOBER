@@ -23,8 +23,25 @@
     {% endif %}
 
     <div class="form-group">
+        <label for="function">{{__SELF__.properties.functionLabel}}</label>
+        <select name="function" id="function" name="function" class="form-control">
+            <option value="Etudiant">Etudiant</option>
+            <option value="Professionnel">Professionnel</option>
+            <option value="Curieux">Curieux</option>
+        </select>
+    </div>
+
+    <div class="form-group">
         <label for="subject">{{__SELF__.properties.subjectLabel}}</label>
-        <input type="text" id="subject" name="subject" class="form-control">
+        <input type="text" id="subject" name="subject" class="form-control" >
+        <!-- <select name="subject" id="subject" name="subject" class="form-control">
+            <option value="Information">Demande d'information</option>
+            <option value="Candiadature">Candidature</option>
+            <option value="Contact">Prise de contact</option>
+            <option value="Professionnel">Information professionnel</option>
+            <option value="Partenariat">Demande de partenariat</option>
+            <option value="Autre">Autre</option>
+        </select> -->
     </div>
 
     <div class="form-group">

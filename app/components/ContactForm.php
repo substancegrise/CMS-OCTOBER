@@ -57,6 +57,15 @@ class ContactForm extends ComponentBase
                 'validationMessage' => 'Subject label required'
 
             ],
+            'functionTitle' => [
+                'title' => 'lfi.app::lang.contactformcomponent.function_title',
+                'description' => 'lfi.app::lang.contactformcomponent.function_description',
+                'default' => 'Function',
+                'type' => 'string',
+                'required' => true,
+                'validationMessage' => 'Function label required'
+
+            ],
             'messageTitle' => [
                 'title' => 'lfi.app::lang.contactformcomponent.message_title',
                 'description' => 'lfi.app::lang.contactformcomponent.message_description',
@@ -96,6 +105,7 @@ class ContactForm extends ComponentBase
             'emailLabel' => $this->property('emailTitle','Email'),
             'phoneLabel' => $this->property('phoneTitle','Phone No.'),
             'subjectLabel' => $this->property('subjectTitle','Subject'),
+            'functionLabel' => $this->property('functionTitle','Function'),
             'messageLabel' => $this->property('messageTitle','Message'),
             'phoneEnabled' => $this->property('displayPhone',false),
             'buttonText' => $this->property('buttonText','Submit'),
@@ -137,12 +147,14 @@ class ContactForm extends ComponentBase
             'email.required' => e(trans('lfi.app::validation.custom.email.required')),
             'email.email' => e(trans('lfi.app::validation.custom.email.email')),
             'subject.required' => e(trans('lfi.app::validation.custom.subject.required')),
+            'function.required' => e(trans('lfi.app::validation.custom.function.required')),
             'message.required' => e(trans('lfi.app::validation.custom.message.required'))
         ];
         $formValidationRules = [
             'name' => 'required',
             'email' => 'required|email',
             'subject' => 'required',
+            'function' => 'required',
             'message' => 'required'
         ];
 
@@ -201,6 +213,7 @@ class ContactForm extends ComponentBase
         $model->email = post('email');
         $model->phone = post('phone');
         $model->subject = post('subject');
+        $model->function = post('function');
         $model->message = post('message');
 
         $model->save();
@@ -227,6 +240,7 @@ class ContactForm extends ComponentBase
             'email' => post('email'),
             'phone' => post('phone'),
             'subject' => post('subject'),
+            'function' => post('function'),
             'message_body' => post('message')
         ];
 
@@ -246,6 +260,7 @@ class ContactForm extends ComponentBase
             'email' => post('email'),
             'phone' => post('phone'),
             'subject' => post('subject'),
+            'function' => post('function'),
             'message_body' => post('message')
         ];
 

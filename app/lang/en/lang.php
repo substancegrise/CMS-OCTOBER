@@ -5,6 +5,7 @@
     ],
     'contactform' => [
         'from' => 'From',
+        'function' => 'Function',
         'subject' => 'Subject',
         'name' => 'Name',
         'email' => 'Email',

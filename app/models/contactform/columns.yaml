@@ -5,6 +5,11 @@ columns:
         path: ~/plugins/lfi/app/models/contactform/_name_col.htm
         searchable: true
         sortable: true
+    function:
+        label: 'lfi.app::lang.contactform.function'
+        type: text
+        searchable: true
+        sortable: true
     subject:
         label: 'lfi.app::lang.contactform.subject'
         type: text

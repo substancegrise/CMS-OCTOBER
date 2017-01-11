@@ -178,6 +178,22 @@ class ContactForm extends Controller
 
     }
 
+    /**
+     * view single message details
+     *
+     * @param $id
+     */
+    public function index(){
+
+            $this->addCss("/plugins/lfi/app/assets/css/backend-custom.css", "1.0.0");
+
+            $this->pageTitle = "KIKI IS IN DA PLACE";
+
+            // Call the ListController behavior index() method
+            $this->asExtension('ListController')->index();
+
+    }
+
 
 
 }
