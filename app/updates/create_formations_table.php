@@ -12,7 +12,6 @@ class CreateFormationsTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('title');
-            $table->enum('categorie', ['diplomante', 'formante', 'certifiante']);
             $table->text('content');
             $table->timestamp('start_date');
             $table->timestamp('end_date');

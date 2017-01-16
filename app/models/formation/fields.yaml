@@ -1,16 +1,8 @@
-# ===================================
-#  Form Field Definitions
-# ===================================
-
 fields:
     title:
         label: Titre
         required: true
         type: text
-    category:
-        label: Categorie
-        type: checkbox
-        default: true
     content:
         label: Description
         type: richeditor
@@ -23,16 +15,16 @@ fields:
         imageHeight: 260
         imageWidth: 260
     start_date:
-        label: Date de début
+        label: 'Date de début'
         type: datepicker
         mode: date
     end_date:
-        label: Date de fin
-        type: datepicker
+        label: 'Date de fin'
+        oc.commentPosition: ''
         mode: date
+        span: full
+        type: datepicker
     is_published:
         label: Publié
         type: switch
-        comment: Cliquez pour publier ou dépublier
-
-
+        comment: 'Cliquez pour publier ou dépublier'
