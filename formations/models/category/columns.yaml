@@ -1,0 +1,6 @@
+columns:
+    formation_category:
+        label: catégories
+        type: text
+        searchable: true
+        sortable: true

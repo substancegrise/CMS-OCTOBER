@@ -1,0 +1,22 @@
+fields:
+    program_name:
+        label: 'Code et nombre d''heures *'
+        oc.commentPosition: ''
+        span: left
+        type: text
+    program_title:
+        label: 'Titre du programme'
+        oc.commentPosition: ''
+        span: full
+        type: text
+    program_short:
+        label: 'Résumé du programme'
+        oc.commentPosition: ''
+        span: full
+        type: text
+    program_text:
+        label: 'Texte programme'
+        size: ''
+        oc.commentPosition: ''
+        span: auto
+        type: textarea

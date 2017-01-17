@@ -1,0 +1,24 @@
+plugin:
+    name: 'lfi.formations::lang.plugin.name'
+    description: 'lfi.formations::lang.plugin.description'
+    author: lfi
+    icon: oc-icon-book
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Formations
+        url: lfi/formations/formations
+        icon: icon-book
+        sideMenu:
+            side-menu-item:
+                label: Formations
+                url: lfi/formations/formations
+                icon: icon-book
+            side-menu-item2:
+                label: Catégories
+                url: lfi/formations/category
+                icon: icon-tags
+            programme:
+                label: Programmes
+                url: lfi/formations/program
+                icon: icon-clipboard

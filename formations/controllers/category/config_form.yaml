@@ -1,0 +1,10 @@
+name: Category
+form: $/lfi/formations/models/category/fields.yaml
+modelClass: Lfi\Formations\Models\Category
+defaultRedirect: lfi/formations/category
+create:
+    redirect: 'lfi/formations/category/update/:id'
+    redirectClose: lfi/formations/category
+update:
+    redirect: lfi/formations/category
+    redirectClose: lfi/formations/category

@@ -1,0 +1,10 @@
+columns:
+    name:
+        label: TITRE
+        type: text
+        searchable: true
+        sortable: true
+    start:
+        label: DEBUT
+        type: date
+        sortable: true

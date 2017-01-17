@@ -1,0 +1,10 @@
+columns:
+    program_name:
+        label: Nom
+        type: text
+        searchable: true
+        sortable: true
+    program_title:
+        label: Titre
+        type: text
+        searchable: false

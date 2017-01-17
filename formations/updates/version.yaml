@@ -1,0 +1,26 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table lfi_formations_'
+    - builder_table_create_lfi_formations_.php
+1.0.3:
+    - 'Updated table lfi_formations_'
+    - builder_table_update_lfi_formations_.php
+1.0.4:
+    - 'Updated table lfi_formations_'
+    - builder_table_update_lfi_formations__2.php
+1.0.5:
+    - 'Created table lfi_formations_category'
+    - builder_table_create_lfi_formations_category.php
+1.0.6:
+    - 'Created table lfi_formations_form_categ'
+    - builder_table_create_lfi_formations_form_categ.php
+1.0.7:
+    - 'Drop table lfi_formations_formations_category'
+    - builder_table_delete_lfi_formations_formations_category.php
+1.0.8:
+    - 'Created table lfi_formations_programmes'
+    - builder_table_create_lfi_formations_programmes.php
+1.0.9:
+    - 'Created table lfi_formations_form_program'
+    - builder_table_create_lfi_formations_form_program.php

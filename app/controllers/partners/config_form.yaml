@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Partner
+
+# Model Form Field configuration
+form: $/lfi/app/models/partners/fields.yaml
+
+# Model Class name
+modelClass: Lfi\App\Models\Partners
+
+# Default redirect location
+defaultRedirect: lfi/app/partners
+
+# Create page
+create:
+    title: Create Partner
+    redirect: lfi/app/partners/update/:id
+    redirectClose: lfi/app/partners
+
+# Update page
+update:
+    title: Edit Partner
+    redirect: lfi/app/partners
+    redirectClose: lfi/app/partners
+
+# Preview page
+preview:
+    title: Preview Partner

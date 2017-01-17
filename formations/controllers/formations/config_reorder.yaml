@@ -1,0 +1,4 @@
+title: Formations
+modelClass: Lfi\Formations\Models\Formation
+toolbar:
+    buttons: reorder_toolbar

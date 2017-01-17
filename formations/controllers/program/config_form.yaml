@@ -1,0 +1,10 @@
+name: Program
+form: $/lfi/formations/models/program/fields.yaml
+modelClass: Lfi\Formations\Models\Program
+defaultRedirect: lfi/formations/program
+create:
+    redirect: 'lfi/formations/program/update/:id'
+    redirectClose: lfi/formations/program
+update:
+    redirect: lfi/formations/program
+    redirectClose: lfi/formations/program

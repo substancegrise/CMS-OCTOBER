@@ -1,0 +1,10 @@
+name: Formations
+modelClass: Lfi\Formations\Models\Formation
+form: $/lfi/formations/models/formation/fields.yaml
+defaultRedirect: lfi/formations/formations
+create:
+    redirect: 'lfi/formations/formations/update/:id'
+    redirectClose: lfi/formations/formations
+update:
+    redirect: lfi/formations/formations
+    redirectClose: lfi/formations/formations

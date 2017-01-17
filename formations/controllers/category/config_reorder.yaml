@@ -1,0 +1,4 @@
+title: Category
+modelClass: Lfi\Formations\Models\Category
+toolbar:
+    buttons: reorder_toolbar

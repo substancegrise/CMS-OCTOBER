@@ -1,0 +1,14 @@
+fields:
+    formation_category:
+        label: catégorie
+        oc.commentPosition: ''
+        span: left
+        type: text
+    slug:
+        label: 'titre URL'
+        oc.commentPosition: ''
+        span: right
+        preset:
+            field: formation_category
+            type: slug
+        type: text

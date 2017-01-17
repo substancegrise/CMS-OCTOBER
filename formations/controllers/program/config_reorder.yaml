@@ -1,0 +1,4 @@
+title: Program
+modelClass: Lfi\Formations\Models\Program
+toolbar:
+    buttons: reorder_toolbar
