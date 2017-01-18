@@ -1,2 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea/
+.project
+.settings
+.DS_Store
+node_modules/
+bower_components/
