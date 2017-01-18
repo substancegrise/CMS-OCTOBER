@@ -24,3 +24,6 @@
 1.0.9:
     - 'Created table lfi_formations_form_program'
     - builder_table_create_lfi_formations_form_program.php
+1.0.10:
+    - 'Updated table lfi_formations_form_program'
+    - builder_table_update_lfi_formations_form_program.php

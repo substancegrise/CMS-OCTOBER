@@ -36,12 +36,14 @@ class Program extends Model
 
             'table' => 'lfi_formations_form_program',
 
-            'order' => 'program_title'
+            'order' => 'name'
 
         ]
     ];
 
-
+    public function getFullNameAttribute(){
+        return $this->program_title . " " . $this->program_name;
+    }
 
 
 }
