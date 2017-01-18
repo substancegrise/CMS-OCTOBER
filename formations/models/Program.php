@@ -26,5 +26,22 @@ class Program extends Model
      */
     public $table = 'lfi_formations_programmes';
 
-    protected $jsonable = ['program_name'];
+    /*protected $jsonable = ['program_name'];*/
+
+    public $belongsToMany = [
+
+        'formations' => [
+
+            'Lfi\Formations\Models\Formation',
+
+            'table' => 'lfi_formations_form_program',
+
+            'order' => 'program_title'
+
+        ]
+    ];
+
+
+
+
 }

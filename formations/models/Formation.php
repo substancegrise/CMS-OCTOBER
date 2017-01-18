@@ -28,8 +28,8 @@ class Formation extends Model
 
     /*
      * *
-     */
-    protected $jsonable = ['program_name'];
+
+    protected $jsonable = ['program_name']; */
     
     /*
      *Relation
@@ -45,13 +45,14 @@ class Formation extends Model
             'order' => 'formation_category'
         
         ],
+
          'programsgeneral' => [
 
             'Lfi\Formations\Models\Program',
 
             'table' => 'lfi_formations_form_program',
 
-            'order' => 'program_name'
+            'order' => 'program_title'
 
         ]
     ];

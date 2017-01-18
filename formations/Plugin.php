@@ -8,6 +8,16 @@ class Plugin extends PluginBase
     {
     }
 
+    public function registerFormWidgets()
+    {
+        return [
+            'Lfi\Formations\FormWidgets\Programbox' => [
+                'label' => 'Programbox field',
+                'code'  => 'programbox'
+            ]
+        ];
+    }
+
     public function registerSettings()
     {
     }
