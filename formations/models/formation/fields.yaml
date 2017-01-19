@@ -208,3 +208,11 @@ tabs:
             span: full
             type: programbox
             tab: PROGRAMME
+        interviews:
+            label: 'CHOIX INTERVIEW'
+            nameFrom: name
+            descriptionFrom: description
+            span: full
+            type: relation
+            comment: 'un unique choix par formation'
+            tab: INTERVIEW

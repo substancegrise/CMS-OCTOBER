@@ -54,9 +54,19 @@ class Formation extends Model
 
             'order' => 'program_title'
 
-        ]
-    ];
+        ],
 
+         'interviews' => [
+
+            'Lfi\Formations\Models\Interview',
+
+            'table' => 'lfi_formations_form_interview',
+
+            'order' => 'title'
+
+        ]
+
+    ];
     
     public $attachOne = [
 

@@ -30,3 +30,12 @@
 1.0.11:
     - 'Created table lfi_formations_interviews'
     - builder_table_create_lfi_formations_interviews.php
+1.0.12:
+    - 'Created table lfi_formations_form_interview'
+    - builder_table_create_lfi_formations_form_interview.php
+1.0.13:
+    - 'Created table lfi_formations_financements'
+    - builder_table_create_lfi_formations_financements.php
+1.0.14:
+    - 'Updated table lfi_formations_financements'
+    - builder_table_update_lfi_formations_financements.php

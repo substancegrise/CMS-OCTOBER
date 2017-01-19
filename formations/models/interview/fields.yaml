@@ -4,20 +4,13 @@ fields:
         oc.commentPosition: ''
         span: left
         type: text
-    last_name:
-        label: NOM
-        oc.commentPosition: ''
-        span: right
-        type: text
     title:
         label: 'TITRE DU TEMOIGNAGE'
-        oc.commentPosition: ''
         span: left
         type: text
         comment: 'ex "PAROLES DE PRO"'
     subtitle:
         label: SOUS-TITRE
-        oc.commentPosition: ''
         span: auto
         type: text
         comment: 'ex "ANCIEN LFI"'
@@ -42,3 +35,59 @@ fields:
         oc.commentPosition: ''
         span: right
         type: textarea
+    picture:
+        label: 'PHOTO TEMOIN'
+        span: auto
+        oc.commentPosition: ''
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        imageWidth: '200'
+        imageHeight: '230'
+        type: fileupload
+tabs:
+    fields:
+        link:
+            label: 'SITE WEB'
+            span: full
+            type: text
+            comment: 'ex "www.site.com"'
+            tab: RESEAUX
+        twitter:
+            label: 'LIEN TWITTER'
+            oc.commentPosition: ''
+            span: left
+            type: text
+            tab: RESEAUX
+        linkedin:
+            label: 'LIEN LINKEDIN'
+            oc.commentPosition: ''
+            span: right
+            type: text
+            tab: RESEAUX
+        instagram:
+            label: 'LIEN INSTAGRAM'
+            oc.commentPosition: ''
+            span: auto
+            type: text
+            tab: RESEAUX
+        facebook:
+            label: 'LIEN FACEBOOK'
+            oc.commentPosition: ''
+            span: right
+            type: text
+            tab: RESEAUX
+        viadeo:
+            label: 'LIEN VIADEO'
+            oc.commentPosition: ''
+            span: left
+            type: text
+            tab: RESEAUX
+        vimeo:
+            label: 'LIEN VIMEO'
+            oc.commentPosition: ''
+            span: right
+            type: text
+            tab: RESEAUX

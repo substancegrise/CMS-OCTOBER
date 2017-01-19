@@ -25,4 +25,13 @@ class Interview extends Model
      * @var string The database table used by the model.
      */
     public $table = 'lfi_formations_interviews';
+
+
+    public $attachOne = [
+
+        'picture' => 'System\Models\File'
+
+    ];
+
+
 }
