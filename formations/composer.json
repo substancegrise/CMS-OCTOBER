@@ -1,0 +1,20 @@
+{
+    "name": "lfi/app",
+    "type": "october-plugin",
+    "description": "LFI plugin for October CMS",
+    "authors": [
+        {
+            "name": "Christian Colligon",
+            "email": "substancegrise@gmail.com",
+            "role": "Dev-1"
+        },
+        {
+            "name": "Dominique Picard",
+            "email": "dominique@ifive.io",
+            "role": "Dev-2"
+        }
+    ],
+    "require": {
+        "rainlab/builder-plugin": "master"
+    }
+}
