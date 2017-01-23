@@ -5,7 +5,7 @@ use Model;
 /**
  * Model
  */
-class Interview extends Model
+class Finance extends Model
 {
     use \October\Rain\Database\Traits\Validation;
 
@@ -24,14 +24,5 @@ class Interview extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'lfi_formations_interviews';
-
-
-    public $attachOne = [
-
-        'picture' => 'System\Models\File'
-
-    ];
-
-
+    public $table = 'lfi_formations_financements';
 }

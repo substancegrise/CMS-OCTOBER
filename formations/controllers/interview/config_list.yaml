@@ -1,0 +1,11 @@
+list: $/lfi/formations/models/interview/columns.yaml
+modelClass: Lfi\Formations\Models\Interview
+title: Interview
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'lfi/formations/interview/update/:id'

@@ -1,0 +1,10 @@
+name: Finance
+form: $/lfi/formations/models/finance/fields.yaml
+modelClass: Lfi\Formations\Models\Finance
+defaultRedirect: lfi/formations/finance
+create:
+    redirect: 'lfi/formations/finance/update/:id'
+    redirectClose: lfi/formations/finance
+update:
+    redirect: lfi/formations/finance
+    redirectClose: lfi/formations/finance

@@ -1,0 +1,4 @@
+title: Interview
+modelClass: Lfi\Formations\Models\Interview
+toolbar:
+    buttons: reorder_toolbar

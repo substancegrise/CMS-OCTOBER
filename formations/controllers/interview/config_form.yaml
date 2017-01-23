@@ -1,0 +1,10 @@
+name: Interview
+form: $/lfi/formations/models/interview/fields.yaml
+modelClass: Lfi\Formations\Models\Interview
+defaultRedirect: lfi/formations/interview
+create:
+    redirect: 'lfi/formations/interview/update/:id'
+    redirectClose: lfi/formations/interview
+update:
+    redirect: lfi/formations/interview
+    redirectClose: lfi/formations/interview
