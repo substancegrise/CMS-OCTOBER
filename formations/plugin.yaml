@@ -6,27 +6,27 @@ plugin:
     homepage: ''
 navigation:
     main-menu-item:
-        label: 'ADMIN LFI'
+        label: FORMATIONS
         url: lfi/formations/formations
         icon: icon-book
         sideMenu:
             side-menu-item:
-                label: FORMATIONS
+                label: Formations
                 url: lfi/formations/formations
                 icon: icon-book
             side-menu-item2:
-                label: CATEGORIES
+                label: Catégories
                 url: lfi/formations/category
                 icon: icon-tags
             programme:
-                label: PROGRAMMES
+                label: Programmes
                 url: lfi/formations/program
                 icon: icon-clipboard
             side-menu-item3:
-                label: TEMOIGNAGES
+                label: Témoignages
                 url: lfi/formations/interview
                 icon: icon-users
             side-menu-item4:
-                label: FINANCEMENT
+                label: Financement
                 url: lfi/formations/finance
                 icon: icon-money

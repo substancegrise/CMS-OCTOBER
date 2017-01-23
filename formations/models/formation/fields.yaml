@@ -1,21 +1,23 @@
 fields:
     categories:
-        label: 'Formation catégorie'
+        label: 'FORMATION CATEGORIE'
         oc.commentPosition: ''
         nameFrom: formation_category
         descriptionFrom: description
         span: left
+        required: 1
         type: relation
     name:
-        label: 'Titre Formation'
+        label: 'TITRE FORMATION'
         oc.commentPosition: ''
         span: full
         required: 1
         type: text
     slug:
-        label: 'Titre URL'
+        label: 'TITRE URL'
         oc.commentPosition: ''
         span: full
+        required: 1
         preset:
             field: name
             type: slug
@@ -25,65 +27,76 @@ fields:
         oc.commentPosition: ''
         mode: date
         span: left
+        required: 1
         type: datepicker
     end:
         label: 'FORMATION FIN'
         oc.commentPosition: ''
         mode: date
         span: right
+        required: 1
         type: datepicker
     candidate_start:
         label: 'CANDIDATURE DEBUT'
         mode: date
         span: left
+        required: 1
         type: datepicker
         comment: 'début d''inscription'
     candidate_end:
         label: 'CANDIDATURE FIN'
         mode: date
         span: right
+        required: 1
         type: datepicker
         comment: 'limite d''inscription'
     subtitle:
         label: INTITULE
         oc.commentPosition: ''
         span: left
+        required: 1
         type: text
     level:
         label: NIVEAU
         oc.commentPosition: ''
         span: right
+        required: 1
         type: text
     time:
         label: DUREE
         oc.commentPosition: ''
         span: left
+        required: 1
         type: text
     hours:
         label: 'NOMBRE D''HEURES'
-        span: auto
         oc.commentPosition: ''
+        span: auto
+        required: 1
         type: text
     place:
         label: 'NOMBRES DE PLACES'
         oc.commentPosition: ''
         span: left
+        required: 1
         type: text
     price:
         label: 'PRIX FORMATION'
         oc.commentPosition: ''
         span: right
+        required: 1
         type: text
     presentation:
         label: 'TEXTE DE PRESENTATION'
         size: ''
         oc.commentPosition: ''
         span: full
+        required: 1
         type: textarea
 tabs:
     fields:
         imghome:
-            label: 'Visuel Home*'
+            label: ACCUEIL
             mode: image
             imageWidth: '130'
             imageHeight: '100'
@@ -96,7 +109,7 @@ tabs:
             comment: '320x202 pixels'
             tab: 'SECTION VISUELS'
         meformer:
-            label: 'Visuel Formation'
+            label: 'LISTE FORMATION'
             mode: image
             imageWidth: '100'
             imageHeight: '100'
@@ -109,7 +122,7 @@ tabs:
             comment: '320x350 pixels'
             tab: 'SECTION VISUELS'
         imgright:
-            label: 'Visuel latéral'
+            label: 'FORMATION LATERAL'
             mode: image
             imageWidth: '100'
             imageHeight: '250'
@@ -122,7 +135,7 @@ tabs:
             comment: '175x535 pixels'
             tab: 'SECTION VISUELS'
         imgcenter:
-            label: 'Visuel horizontal'
+            label: 'FORMATION HORIZONTAL'
             mode: image
             imageWidth: '250'
             imageHeight: '100'
@@ -135,7 +148,7 @@ tabs:
             comment: '960x255 pixels'
             tab: 'SECTION VISUELS'
         imgback:
-            label: Backgroung
+            label: BACKGROUND
             mode: image
             imageWidth: '800'
             imageHeight: '400'
