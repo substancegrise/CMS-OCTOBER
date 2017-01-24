@@ -75,6 +75,7 @@ class Formation extends Model
         'imgright'  =>  'System\Models\File',
         'imgcenter'  =>  'System\Models\File',
         'imgback'  =>  'System\Models\File',
+        'fiche_formation'  =>  'System\Models\File',
 
     ];
     

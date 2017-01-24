@@ -30,3 +30,7 @@ navigation:
                 label: Financement
                 url: lfi/formations/finance
                 icon: icon-money
+    partners:
+        label: PARTENAIRE
+        url: lfi/formations/partners
+        icon: icon-connectdevelop

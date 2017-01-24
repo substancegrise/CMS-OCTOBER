@@ -93,6 +93,16 @@ fields:
         span: full
         required: 1
         type: textarea
+    fiche_formation:
+        label: 'FICHE FORMATION PDF'
+        oc.commentPosition: ''
+        mode: file
+        useCaption: 0
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
 tabs:
     fields:
         imghome:
@@ -211,10 +221,10 @@ tabs:
             tab: 'TEXTE CADRE'
         program:
             label: 'TEXTE PROGRAMME'
-            span: full
-            size: ''
+            size: large
             oc.commentPosition: ''
-            type: richeditor
+            span: full
+            type: textarea
             tab: PROGRAMME
         programsgeneral:
             label: 'PROGRAMMES GENERAUX'
@@ -223,7 +233,7 @@ tabs:
             tab: PROGRAMME
         interviews:
             label: 'CHOIX INTERVIEW'
-            nameFrom: name
+            nameFrom: full_name
             descriptionFrom: description
             span: full
             type: relation

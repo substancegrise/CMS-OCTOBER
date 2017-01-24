@@ -33,5 +33,9 @@ class Interview extends Model
 
     ];
 
+    public function getFullNameAttribute(){
+        return $this->name . " " . $this->last_name;
+    }
+
 
 }
