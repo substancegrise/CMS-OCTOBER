@@ -1,0 +1,10 @@
+name: Partners
+form: $/lfi/formations/models/partners/fields.yaml
+modelClass: Lfi\Formations\Models\Partners
+defaultRedirect: lfi/formations/partners
+create:
+    redirect: 'lfi/formations/partners/update/:id'
+    redirectClose: lfi/formations/partners
+update:
+    redirect: lfi/formations/partners
+    redirectClose: lfi/formations/partners

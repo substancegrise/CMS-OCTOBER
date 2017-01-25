@@ -1,0 +1,6 @@
+columns:
+    name:
+        label: PARTENAIRE
+        type: text
+        searchable: true
+        sortable: true

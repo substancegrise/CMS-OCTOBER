@@ -1,0 +1,4 @@
+title: Partners
+modelClass: Lfi\Formations\Models\Partners
+toolbar:
+    buttons: reorder_toolbar
