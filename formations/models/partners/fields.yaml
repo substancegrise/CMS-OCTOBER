@@ -1,0 +1,16 @@
+fields:
+    name:
+        label: 'NOM DU PARTENAIRE'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    img_partners:
+        label: IMAGE
+        span: auto
+        oc.commentPosition: ''
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: exact
+            extension: auto
+        type: fileupload
