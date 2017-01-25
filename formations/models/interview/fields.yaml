@@ -1,8 +1,13 @@
 fields:
+    last_name:
+        label: NOM
+        oc.commentPosition: ''
+        span: left
+        type: text
     name:
         label: PRENOM
         oc.commentPosition: ''
-        span: left
+        span: right
         type: text
     title:
         label: 'TITRE DU TEMOIGNAGE'
@@ -11,7 +16,7 @@ fields:
         comment: 'ex "PAROLES DE PRO"'
     subtitle:
         label: SOUS-TITRE
-        span: auto
+        span: right
         type: text
         comment: 'ex "ANCIEN LFI"'
     function:
