@@ -19,8 +19,12 @@ navigation:
                 url: lfi/formations/category
                 icon: icon-tags
             programme:
-                label: Programmes
+                label: 'Modules Generaux'
                 url: lfi/formations/program
+                icon: icon-clipboard
+            professionals:
+                label: 'Modules Professionnels'
+                url: lfi/formations/professional
                 icon: icon-clipboard
             side-menu-item3:
                 label: Témoignages

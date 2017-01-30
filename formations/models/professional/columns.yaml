@@ -1,0 +1,11 @@
+columns:
+    profes_name:
+        label: NOM
+        type: text
+        searchable: true
+        sortable: true
+    profes_title:
+        label: TITRE
+        type: text
+        searchable: true
+        sortable: true

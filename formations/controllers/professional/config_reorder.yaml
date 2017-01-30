@@ -1,0 +1,4 @@
+title: Professional
+modelClass: Lfi\Formations\Models\Professional
+toolbar:
+    buttons: reorder_toolbar

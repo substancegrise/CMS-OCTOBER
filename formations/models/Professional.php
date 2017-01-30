@@ -5,7 +5,7 @@ use Model;
 /**
  * Model
  */
-class Program extends Model
+class Professional extends Model
 {
     use \October\Rain\Database\Traits\Validation;
 
@@ -24,9 +24,9 @@ class Program extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'lfi_formations_programmes';
+    public $table = 'lfi_formations_professionals';
 
-    /*protected $jsonable = ['program_name'];*/
+
 
     public $belongsToMany = [
 
@@ -34,7 +34,7 @@ class Program extends Model
 
             'Lfi\Formations\Models\Formation',
 
-            'table' => 'lfi_formations_form_program',
+            'table' => 'lfi_formations_form_profes',
 
             'order' => 'name'
 
@@ -42,7 +42,7 @@ class Program extends Model
     ];
 
     public function getFullNameAttribute(){
-        return $this->program_name . " " . $this->program_title;
+        return $this->profes_name . " " . $this->profes_title;
     }
 
 

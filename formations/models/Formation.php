@@ -52,7 +52,17 @@ class Formation extends Model
 
             'table' => 'lfi_formations_form_program',
 
-            'order' => 'program_title'
+            'order' => 'program_name'
+
+        ],
+
+        'programsprofessionnel' => [
+
+            'Lfi\Formations\Models\Professional',
+
+            'table' => 'lfi_formations_form_profes',
+
+            'order' => ''
 
         ],
 

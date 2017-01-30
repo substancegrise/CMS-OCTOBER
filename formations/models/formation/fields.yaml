@@ -219,18 +219,11 @@ tabs:
             span: full
             type: textarea
             tab: 'TEXTE CADRE'
-        program:
-            label: 'TEXTE PROGRAMME'
-            size: large
-            oc.commentPosition: ''
-            span: full
-            type: textarea
-            tab: PROGRAMME
         programsgeneral:
             label: 'PROGRAMMES GENERAUX'
             span: full
             type: programbox
-            tab: PROGRAMME
+            tab: 'MODULES GENERAUX'
         interviews:
             label: 'CHOIX INTERVIEW'
             nameFrom: full_name
@@ -239,3 +232,15 @@ tabs:
             type: relation
             comment: 'un unique choix par formation'
             tab: INTERVIEW
+        program:
+            label: 'PROGRAMME TEXTE'
+            size: large
+            oc.commentPosition: ''
+            span: full
+            type: textarea
+            tab: 'PROGRAMME TEXTE'
+        programsprofessionnel:
+            label: 'PROGRAMMES PROFESSIONNELS'
+            span: full
+            type: profesbox
+            tab: 'MODULES PROFESSIONNELS'
