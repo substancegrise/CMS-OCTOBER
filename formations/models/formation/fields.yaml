@@ -13,11 +13,12 @@ fields:
         span: full
         required: 1
         type: text
+        comment: 'EN MAJUSCULE'
     slug:
         label: 'TITRE URL'
         oc.commentPosition: ''
         span: full
-        required: 1
+        required: 0
         preset:
             field: name
             type: slug
@@ -27,27 +28,27 @@ fields:
         oc.commentPosition: ''
         mode: date
         span: left
-        required: 1
+        required: 0
         type: datepicker
     end:
         label: 'FORMATION FIN'
         oc.commentPosition: ''
         mode: date
         span: right
-        required: 1
+        required: 0
         type: datepicker
     candidate_start:
         label: 'CANDIDATURE DEBUT'
         mode: date
         span: left
-        required: 1
+        required: 0
         type: datepicker
         comment: 'début d''inscription'
     candidate_end:
         label: 'CANDIDATURE FIN'
         mode: date
         span: right
-        required: 1
+        required: 0
         type: datepicker
         comment: 'limite d''inscription'
     subtitle:
@@ -56,42 +57,48 @@ fields:
         span: left
         required: 1
         type: text
+        comment: 'EN MAJUSCULE'
     level:
         label: NIVEAU
         oc.commentPosition: ''
         span: right
         required: 1
         type: text
+        comment: 'EN MAJUSCULE'
     time:
         label: DUREE
         oc.commentPosition: ''
         span: left
         required: 1
         type: text
+        comment: 'exemple: [8MOIS]'
     hours:
         label: 'NOMBRE D''HEURES'
         oc.commentPosition: ''
         span: auto
         required: 1
         type: text
+        comment: 'exemple: 1123'
     place:
         label: 'NOMBRES DE PLACES'
         oc.commentPosition: ''
         span: left
         required: 1
         type: text
+        comment: 'exemple: 30'
     price:
         label: 'PRIX FORMATION'
         oc.commentPosition: ''
         span: right
         required: 1
         type: text
+        comment: 'exemple : 1000'
     presentation:
         label: 'TEXTE DE PRESENTATION'
         size: ''
         oc.commentPosition: ''
         span: full
-        required: 1
+        required: 0
         type: textarea
     fiche_formation:
         label: 'FICHE FORMATION PDF'
@@ -103,6 +110,7 @@ fields:
             extension: auto
         span: auto
         type: fileupload
+        comment: 'Téléchargement de votre fichier PDF'
 tabs:
     fields:
         condition:

@@ -4,9 +4,11 @@ fields:
         oc.commentPosition: ''
         span: left
         type: text
+        comment: 'EN MAJUSCULE'
     finance_txt:
         label: 'COURT TEXTE'
         span: full
         size: ''
         oc.commentPosition: ''
         type: richeditor
+        comment: 'court texte avec vos liens'

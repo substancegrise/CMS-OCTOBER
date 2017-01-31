@@ -4,6 +4,7 @@ fields:
         oc.commentPosition: ''
         span: left
         type: text
+        comment: 'JOUR #1'
     day_title1:
         label: 'TITRE LIGNE 1'
         oc.commentPosition: ''
@@ -19,9 +20,11 @@ fields:
         oc.commentPosition: ''
         span: full
         type: text
+        comment: 'Prénom nom - Fonction'
     day_texte:
         label: TEXTE
         span: left
-        size: ''
+        size: large
         oc.commentPosition: ''
         type: textarea
+        comment: /Texte
