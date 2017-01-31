@@ -16,6 +16,7 @@
     ],
     "require": {
         "rainlab/builder-plugin": "master",
+        "rainlab/blog-plugin": "master",
         "vojtasvoboda/oc-twigextensions-plugin": "master"
     }
 }
