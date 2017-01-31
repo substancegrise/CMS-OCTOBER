@@ -1,0 +1,21 @@
+columns:
+    day_number:
+        label: JOUR
+        type: text
+        searchable: true
+        sortable: true
+    day_speaker:
+        label: INTERVENANT
+        type: text
+        searchable: true
+        sortable: true
+    day_title1:
+        label: TITRE
+        type: text
+        searchable: true
+        sortable: true
+    day_title2:
+        label: 'TITRE SUITE'
+        type: text
+        searchable: true
+        sortable: true

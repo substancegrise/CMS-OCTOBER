@@ -1,0 +1,11 @@
+name: Professional
+modelClass: Lfi\Formations\Models\Professional
+form: $/lfi/formations/models/professional/fields.yaml
+defaultRedirect: lfi/formations/professional
+create:
+    redirect: 'lfi/formations/professional/update/:id'
+    redirectClose: lfi/formations/professional
+update:
+    redirect: lfi/formations/professional
+    redirectClose: lfi/formations/professional
+preview: {  }

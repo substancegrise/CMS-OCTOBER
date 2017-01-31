@@ -1,0 +1,22 @@
+fields:
+    profes_name:
+        label: 'Code et nombre d''heures'
+        oc.commentPosition: ''
+        span: left
+        type: text
+    profes_title:
+        label: 'Titre du programme'
+        oc.commentPosition: ''
+        span: full
+        type: text
+    profes_short:
+        label: 'Résumé du programme'
+        oc.commentPosition: ''
+        span: full
+        type: text
+    profes_text:
+        label: 'Texte programme'
+        span: auto
+        size: ''
+        oc.commentPosition: ''
+        type: textarea

@@ -42,3 +42,24 @@
 1.0.15:
     - 'Created table lfi_formations_partners'
     - builder_table_create_lfi_formations_partners.php
+1.0.16:
+    - 'Created table lfi_formations_professionals'
+    - builder_table_create_lfi_formations_professionals.php
+1.0.17:
+    - 'Created table lfi_formations_form_profes'
+    - builder_table_create_lfi_formations_form_profes.php
+1.0.18:
+    - 'Updated table lfi_formations_form_profes'
+    - builder_table_update_lfi_formations_form_profes.php
+1.0.19:
+    - 'Updated table lfi_formations_professionals'
+    - builder_table_update_lfi_formations_professionals.php
+1.0.20:
+    - 'Updated table lfi_formations_programmes'
+    - builder_table_update_lfi_formations_programmes.php
+1.0.21:
+    - 'Created table lfi_formations_day'
+    - builder_table_create_lfi_formations_day.php
+1.0.22:
+    - 'Created table lfi_formations_form_day'
+    - builder_table_create_lfi_formations_form_day.php

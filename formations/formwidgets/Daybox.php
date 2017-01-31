@@ -2,15 +2,14 @@
 
 use Backend\Classes\FormWidgetBase;
 use Config;
-use Lfi\Formations\Models\Professional;
-use Lfi\Formations\Models\Program;
+use Lfi\Formations\Models\Day;
 
-class ProgramBox extends FormWidgetBase
+class DayBox extends FormWidgetBase
 {
     public function widgetDetails()
     {
         return [
-            'name' => 'Programbox',
+            'name' => 'Daybox',
             'description' => 'Field for adding programs'
         ];
     }
@@ -19,7 +18,7 @@ class ProgramBox extends FormWidgetBase
 
         $this->prepareVars();
         //dump($this->vars['selectedValues']);
-        //dump($this->vars['selectedValues']);
+        //dump($this->vars['id']);
 
         return $this->makePartial('widget');
     }
@@ -27,7 +26,7 @@ class ProgramBox extends FormWidgetBase
     public function prepareVars(){
         $this->vars['id'] = $this->model->id;
         // REMONTE L'information en back voulue
-        $this->vars['programms'] = Program::all()->lists('full_name','id');
+        $this->vars['day'] = Day::all()->lists('full_name','id');
 
         $this->vars['name'] = $this->formField->getName().'[]';
 

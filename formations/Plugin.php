@@ -17,6 +17,14 @@ class Plugin extends PluginBase
             'Lfi\Formations\FormWidgets\Programbox' => [
                 'label' => 'Programbox field',
                 'code'  => 'programbox'
+            ],
+            'Lfi\Formations\FormWidgets\Profesbox' => [
+                'label' => 'Profesbox field',
+                'code'  => 'profesbox'
+            ],
+            'Lfi\Formations\FormWidgets\Daybox' => [
+                'label' => 'Daybox field',
+                'code'  => 'daybox'
             ]
         ];
     }

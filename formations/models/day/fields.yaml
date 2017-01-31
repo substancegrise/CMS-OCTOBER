@@ -1,0 +1,27 @@
+fields:
+    day_number:
+        label: 'JOUR #'
+        oc.commentPosition: ''
+        span: left
+        type: text
+    day_title1:
+        label: 'TITRE LIGNE 1'
+        oc.commentPosition: ''
+        span: left
+        type: text
+    day_title2:
+        label: 'TITRE LIGNE 2'
+        oc.commentPosition: ''
+        span: right
+        type: text
+    day_speaker:
+        label: 'INTERVENANT - FONCTION'
+        oc.commentPosition: ''
+        span: full
+        type: text
+    day_texte:
+        label: TEXTE
+        span: left
+        size: ''
+        oc.commentPosition: ''
+        type: textarea
