@@ -1,0 +1,25 @@
+{# Use spaceless tag to remove spaces inside the A tag. #}
+{% spaceless %}
+<div class="list-actus clearfix" id="posts-list-{{page}}">
+    {% for post in posts %}
+        <div class="col-sm-4 list-item row-list {{ record.categories[0].formation_category|lower }}">
+        	<div class="caption">
+        		<div class="heading">
+		            {% for category in post.categories %}
+		            <a href="blog/category/{{ category.slug }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+		            {% endfor %}
+	            	<span>{{ post.published_at|date('d/m') }}</span>
+	            </div>
+	        	<p class="summary">{{ post.summary }}</p>
+	        	<a class="title" href="{{ post.url }}">{{ post.title }}</a>
+           	</div>
+           	
+        	{% if post.featured_images.count %}
+            <a href="{{ post.url }}"><img data-src="{{ post.featured_images[0].filename }}" src="{{ post.featured_images[0].path }}" alt="{{ post.featured_images[0].description }}" style="max-width: 100%" /></a>
+        	{% endif %}
+        </div>
+    {% else %}
+        <div class="no-data">{{ noRecordsMessage }}</div>
+    {% endfor %}
+</div>
+{% endspaceless %}

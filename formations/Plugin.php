@@ -6,6 +6,9 @@ class Plugin extends PluginBase
 {
     public function registerComponents()
     {
+        return [
+            'Lfi\Formations\components\blogposts' => 'BlogPosts'
+        ];
     }
 
     public function registerFormWidgets()
