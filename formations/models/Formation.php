@@ -66,6 +66,16 @@ class Formation extends Model
 
         ],
 
+        'programsday' => [
+
+            'Lfi\Formations\Models\Day',
+
+            'table' => 'lfi_formations_form_day',
+
+            'order' => ''
+
+        ],
+
          'interviews' => [
 
             'Lfi\Formations\Models\Interview',

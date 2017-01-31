@@ -1,0 +1,4 @@
+title: Days
+modelClass: Lfi\Formations\Models\Day
+toolbar:
+    buttons: reorder_toolbar

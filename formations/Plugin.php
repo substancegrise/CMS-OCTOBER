@@ -19,6 +19,10 @@ class Plugin extends PluginBase
                 'label' => 'Profesbox field',
                 'code'  => 'profesbox'
             ],
+            'Lfi\Formations\FormWidgets\Daybox' => [
+                'label' => 'Daybox field',
+                'code'  => 'daybox'
+            ]
         ];
     }
 

@@ -1,0 +1,10 @@
+name: Days
+form: $/lfi/formations/models/day/fields.yaml
+modelClass: Lfi\Formations\Models\Day
+defaultRedirect: lfi/formations/days
+create:
+    redirect: 'lfi/formations/days/update/:id'
+    redirectClose: lfi/formations/days
+update:
+    redirect: lfi/formations/days
+    redirectClose: lfi/formations/days

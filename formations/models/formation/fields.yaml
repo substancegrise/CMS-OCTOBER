@@ -105,6 +105,85 @@ fields:
         type: fileupload
 tabs:
     fields:
+        condition:
+            label: 'CONDITIONS D''ACCES'
+            size: ''
+            oc.commentPosition: ''
+            span: auto
+            type: textarea
+            tab: 'TEXTE CADRE'
+        prerequis:
+            label: PRE-REQUIS
+            size: ''
+            oc.commentPosition: ''
+            span: auto
+            type: textarea
+            tab: 'TEXTE CADRE'
+        modalite:
+            label: MODALITES
+            size: ''
+            oc.commentPosition: ''
+            span: left
+            type: textarea
+            tab: 'TEXTE CADRE'
+        vae:
+            label: VAE
+            size: ''
+            oc.commentPosition: ''
+            span: right
+            type: textarea
+            tab: 'TEXTE CADRE'
+        evalution:
+            label: EVALUATION
+            size: ''
+            oc.commentPosition: ''
+            span: left
+            type: textarea
+            tab: 'TEXTE CADRE'
+        financement:
+            label: FINANCEMENT
+            size: ''
+            oc.commentPosition: ''
+            span: right
+            type: textarea
+            tab: 'TEXTE CADRE'
+        parcours:
+            label: 'PARCOURS INDIVIDUALISE'
+            size: ''
+            oc.commentPosition: ''
+            span: full
+            type: textarea
+            tab: 'TEXTE CADRE'
+        program:
+            label: 'PROGRAMME TEXTE'
+            size: large
+            oc.commentPosition: ''
+            span: full
+            type: textarea
+            tab: 'PROGRAMME TEXTE'
+        programsgeneral:
+            label: 'PROGRAMMES GENERAUX'
+            span: full
+            type: programbox
+            tab: 'MODULES GENERAUX'
+        programsprofessionnel:
+            label: 'PROGRAMMES PROFESSIONNELS'
+            span: full
+            type: profesbox
+            tab: 'MODULES PROFESSIONNELS'
+        programsday:
+            label: 'PROGRAMMES JOURS'
+            span: full
+            type: daybox
+            tab: 'MODULES JOURS'
+        interviews:
+            label: 'CHOIX INTERVIEW'
+            nameFrom: full_name
+            descriptionFrom: description
+            span: full
+            type: relation
+            comment: 'un unique choix par formation'
+            tab: INTERVIEW
         imghome:
             label: ACCUEIL
             mode: image
@@ -170,77 +249,3 @@ tabs:
             type: fileupload
             comment: '1600x800 pixels'
             tab: 'SECTION VISUELS'
-        condition:
-            label: 'CONDITIONS D''ACCES'
-            size: ''
-            oc.commentPosition: ''
-            span: auto
-            type: textarea
-            tab: 'TEXTE CADRE'
-        prerequis:
-            label: PRE-REQUIS
-            size: ''
-            oc.commentPosition: ''
-            span: auto
-            type: textarea
-            tab: 'TEXTE CADRE'
-        modalite:
-            label: MODALITES
-            size: ''
-            oc.commentPosition: ''
-            span: left
-            type: textarea
-            tab: 'TEXTE CADRE'
-        vae:
-            label: VAE
-            size: ''
-            oc.commentPosition: ''
-            span: right
-            type: textarea
-            tab: 'TEXTE CADRE'
-        evalution:
-            label: EVALUATION
-            size: ''
-            oc.commentPosition: ''
-            span: left
-            type: textarea
-            tab: 'TEXTE CADRE'
-        financement:
-            label: FINANCEMENT
-            size: ''
-            oc.commentPosition: ''
-            span: right
-            type: textarea
-            tab: 'TEXTE CADRE'
-        parcours:
-            label: 'PARCOURS INDIVIDUALISE'
-            size: ''
-            oc.commentPosition: ''
-            span: full
-            type: textarea
-            tab: 'TEXTE CADRE'
-        programsgeneral:
-            label: 'PROGRAMMES GENERAUX'
-            span: full
-            type: programbox
-            tab: 'MODULES GENERAUX'
-        interviews:
-            label: 'CHOIX INTERVIEW'
-            nameFrom: full_name
-            descriptionFrom: description
-            span: full
-            type: relation
-            comment: 'un unique choix par formation'
-            tab: INTERVIEW
-        program:
-            label: 'PROGRAMME TEXTE'
-            size: large
-            oc.commentPosition: ''
-            span: full
-            type: textarea
-            tab: 'PROGRAMME TEXTE'
-        programsprofessionnel:
-            label: 'PROGRAMMES PROFESSIONNELS'
-            span: full
-            type: profesbox
-            tab: 'MODULES PROFESSIONNELS'
