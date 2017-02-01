@@ -1,9 +1,10 @@
 fields:
     formation_category:
-        label: catégorie
+        label: CATEGORIE
         oc.commentPosition: ''
         span: left
         type: text
+        comment: 'EN MAJUSCULE'
     slug:
         label: 'titre URL'
         oc.commentPosition: ''
