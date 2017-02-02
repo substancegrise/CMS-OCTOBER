@@ -7,7 +7,7 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'Lfi\Formations\components\blogposts' => 'BlogPosts'
+            'Lfi\Formations\components\BlogPosts' => 'BlogPosts'
         ];
     }
 
