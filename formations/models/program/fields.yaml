@@ -16,7 +16,7 @@ fields:
         type: text
     program_text:
         label: 'Texte programme'
+        span: auto
         size: ''
         oc.commentPosition: ''
-        span: auto
         type: textarea
